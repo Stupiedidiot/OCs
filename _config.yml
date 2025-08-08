@@ -10,3 +10,15 @@ source: public
 theme: minima
 plugins:
   - jekyll-feed
+
+collections:
+  psych:
+    output: true
+  pepup:
+    output: true  
+  pinwin:
+    output: true
+  gayme:
+    output: true
+  misc:
+    output: true
