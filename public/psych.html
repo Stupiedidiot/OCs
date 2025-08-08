@@ -1,0 +1,60 @@
+---
+layout: page
+title: Psych!
+permalink: psych/index
+---
+
+<img src="https://stupied.neocities.org/art/img/drawin/2025-08.png" alt="">
+
+<blockquote>
+    A comic following the trio living in a dysfunctional city in a nowhere country where nothing ever goes wrong!
+</blockquote>
+
+<p>This is comic I initially thought up back in 2019-ish..? It's a absurdist 'monster of the week' episodic comic series - it will make more sense once I actually get to making it lol. It holds a very special place in my heart and practically consumes my every waking moment. I genuinely don't know where I'll be without them,,</p>
+
+<h2>Characters</h2>
+{% assign filtered = site.psych | where: "tags", "primary" %}
+<h3>[{{ filtered | size}}] Primary</h3>
+<p>The main characters of the story! Everything I make is usually written around them</p>
+{% for item in filtered %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>
+{% endfor %}
+
+{% assign filtered = site.psych | where: "tags", "secondary" %}
+<h3>[{{ filtered | size}}] Secondary</h3>
+{% for item in filtered %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>
+{% endfor %}
+
+{% assign filtered = site.psych | where: "tags", "tertiary" %}
+<h3>[{{ filtered | size}}] Tertiary</h3>
+<p>For characters that have a significant amount of lore but only really exist as a </p>
+{% for item in filtered %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>
+{% endfor %}
+
+{% assign filtered = site.psych | where: "tags", "primary" %}
+<h3>[{{ filtered | size}}] Background</h3>
+<p>Characters who don't really have a role outside of filling up panel space. It's fun to try to keep track of though!</p>
+{% for item in filtered %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>
+{% endfor %}
+
+<h3>[{{ site.psych | size}}] Everyone!!</h3>
+{% for item in site.psych %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>
+{% endfor %}
+
+<h2>Locations</h2>
+
+<h2>Creatures</h2>
