@@ -3,6 +3,7 @@ collections: psych
 layout: page
 category: character
 tags: secondary
+Title: Lily Odd
 ---
 
 19 years old // Detective 

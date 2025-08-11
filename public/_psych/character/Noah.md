@@ -3,6 +3,7 @@ collections: psych
 layout: page
 category: character
 tags: tertiary
+title: Noah Day
 ---
 
 19 years old // Collage student

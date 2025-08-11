@@ -3,6 +3,7 @@ collections: psych
 layout: page
 category: character
 tags: secondary
+title: August July
 ---
 
 17 years old // Grade 10

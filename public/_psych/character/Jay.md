@@ -3,6 +3,7 @@ collections: psych
 layout: page
 category: character
 tags: primary
+title: Jay Swift
 ---
 
 17 years old // Grade 10

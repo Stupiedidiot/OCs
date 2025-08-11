@@ -3,6 +3,7 @@ collections: psych
 layout: page
 category: character
 tags: primary
+title: Evan Odd
 ---
 
 16 years old // Grade 10
@@ -30,18 +31,19 @@ One who put the [[band]] together. Writer and Guitarist.
 
 Has a unrequited love for [[Daphne Hong]].
 
-### Personality
+## Personality
 Incredibly laid back and optimistic. Always willing to jump into strange foreign things.
 
-"Hell Yeah"
-"Alrighty then"
-"Is that so?"
-#### Likes
+
+### Likes
 - All things music
 - The Supernatural and Folk lore
-#### Dislikes
+
+### Dislikes
 - Apathetic People
 
 
-
-
+### Phrases
+- "Hell Yeah"
+- "Alrighty then"
+- "Is that so?"

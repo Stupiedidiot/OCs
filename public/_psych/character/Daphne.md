@@ -3,6 +3,7 @@ collections: psych
 layout: page
 category: character
 tags: secondary
+title: Daphne Hong
 ---
 
 17 years old // Grade 10 #side
