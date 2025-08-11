@@ -15,9 +15,9 @@ collections:
   psych:
     output: true
   pepup:
-    output: true  
-  pinwin:
     output: true
+  eighty-four:
+    output: true  
   gayme:
     output: true
   misc:
