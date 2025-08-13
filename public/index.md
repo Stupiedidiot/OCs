@@ -6,7 +6,7 @@ layout: home
 ---
 
 # Stupied OCs
-Henloo, this is Stupied!!! In attempt to make ultimate repository of all my OCs, I am attempting to use Jekyll!!! Currently still figuring out my workflow so please visit my [Main Website](https://stupied.neocities.org/) while I configure everything,,
+Henloo, this is Stupied!!! Currently still figuring out my workflow so please visit my [Main Website](https://stupied.neocities.org/) while I configure everything,,
 
 # About the Artist
 I make no exaggeration when I say I would of killed myself if it weren't for my OCs. If you ever been unfortunate enough to meet me in real life, I am very likely to be staring blanky into the distance - daydreaming. I find it difficult to experience life as it is and need to disassociate to let the little guys in my head relive my present.

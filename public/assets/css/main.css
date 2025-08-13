@@ -31,7 +31,6 @@ main a {
     display: inline-block;
     color: var(--accent-color);
     &:hover { 
-        padding: 0.5rem;
         background-color: var(--accent-color);
         color: white;
     }
