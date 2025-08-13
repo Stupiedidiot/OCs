@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --blue: #44a3c6;
+    --red: #7e1914;
+    --orange: #ae6b37;
+    --teal: #2d7672;
+    --dark-blue: #2d525c;
+    --purple: #523d44;
+    --blue: #1978a7;
     --accent-color: var(--blue);
     --display-font:grandstander;
     --body-font:Arial, Helvetica, sans-serif;
@@ -21,9 +26,18 @@ ol,ul{margin-top:0;}
 a{text-decoration:none;color:inherit;}
 p{margin-top:0;}
 
-p > a {
-    text-decoration:underline;
+p > a { text-decoration:underline; }
+main a {
+    display: inline-block;
+    color: var(--accent-color);
+    &:hover { 
+        padding: 0.5rem;
+        background-color: var(--accent-color);
+        color: white;
+    }
 }
+
+img { max-width: 100%;}
 
 hr.clear{
     margin:0;
@@ -35,8 +49,16 @@ p:last-child,ol:last-child,ul:last-child{
     margin-bottom:0;
 }
 
-main ul li {list-style-type:"★ ";}
-main ul > *:nth-child(2n){list-style-type:"✮ ";}
+blockquote {
+    border-left: 3px solid var(--accent-color);
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-right: 0;
+}
+
+ul li {list-style-type:"★ ";}
+ul > *:nth-child(2n){list-style-type:"✮ ";}
 
 .outline{
     --color:white;
@@ -165,4 +187,145 @@ height: 100%;
 ::selection{
     background-color: var(--blue);
     color: white;
+}
+
+body {
+    background-color: #2b2c37;
+    background-image: linear-gradient(0deg, #2b2c37 50%, #31323c 50%);
+    background-size: 40px 40px;
+}
+
+#container {
+    outline: 3px solid black;
+    border-left: 5px solid var(--red);
+    border-right: 5px solid var(--red);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+  
+    margin: auto;
+    width: 95%;
+    max-width: 800px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'nav main'
+        'footer footer';
+    grid-template-columns: auto 1fr;
+  
+    & > header { grid-area: header; }
+  & > nav { grid-area: nav; }
+  & > main { grid-area: main; }
+  & > footer { grid-area: footer; }
+}
+
+#container > header {
+  user-select: none;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.marquee {
+  position: relative;
+  max-width: 100%;
+  height: 2.5rem;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.marquee span::after {
+  content: "|";
+  padding: 0 1.5rem;
+}
+
+.track {
+    position: absolute;
+    top:50%;
+    white-space: nowrap;
+    animation: marquee 150s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%) translateY(-50%); }
+  100% { transform: translateX(-50%) translateY(-50%); }
+}
+
+header img {
+  display: block;
+  width: 100%;
+  /* Make it an aspect ratio later...! */
+  max-height: 200px;
+  object-fit: cover;
+}
+
+nav {
+    background-color: #16161c;
+    width: 180px;
+    border-left: 2px solid black;
+    border-bottom: 3px solid black;
+    user-select: none;
+}
+
+nav > a {
+    display: block;
+    color: white;
+    padding: 0.5rem;
+    font-family: var(--display-font);
+
+    --border: 3px solid black;
+    border-top: var(--border);
+    border-bottom: var(--border);
+
+    --chosen: var(--red);
+    background-color: var(--chosen);
+
+    &:nth-of-type(2){--chosen: var(--orange);}
+    &:nth-of-type(3){--chosen: var(--dark-blue);}
+    &:nth-of-type(4){--chosen: var(--teal);}
+    &:nth-of-type(5){--chosen: var(--purple);}
+
+    &:hover {
+        background-color: white;
+        color: var(--chosen);
+    }
+}
+
+nav ul {
+  color: lightgray;
+  padding-left: 0;
+  margin-bottom: 0.3rem;
+}
+
+nav ul li {
+  list-style: none!important;
+  padding: 0.5rem;
+  &:not(:last-child){border-bottom: 1px solid gray;}
+}
+
+main {
+    border: 3px solid black;
+    background-color: #f7f2f2;
+    padding: 1rem;
+    min-height: 90vh;
+}
+
+footer {
+  user-select: none;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  border-top: 1px solid white;
+}
+
+/* Make nav collapsable */
+/* Also add a neat doll next to it :3 */
+@media only screen and (max-width: 600px) {
+    #container {
+        display: block;
+    }
+    nav {
+        border-right: 3px solid black;
+        border-bottom: 0;
+    }
 }

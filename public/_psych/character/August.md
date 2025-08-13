@@ -1,6 +1,5 @@
 ---
 collections: psych
-layout: page
 category: character
 tags: secondary
 title: August July
