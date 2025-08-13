@@ -218,9 +218,17 @@ body {
 }
 
 #container > header {
-  user-select: none;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+    user-select: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+    a:hover {filter: saturate(0);}
+    img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+    }
 }
 
 .marquee {
@@ -248,14 +256,6 @@ body {
 @keyframes marquee {
   0% { transform: translateX(0%) translateY(-50%); }
   100% { transform: translateX(-50%) translateY(-50%); }
-}
-
-header img {
-  display: block;
-  width: 100%;
-  /* Make it an aspect ratio later...! */
-  max-height: 200px;
-  object-fit: cover;
 }
 
 nav {
