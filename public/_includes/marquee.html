@@ -2,10 +2,13 @@
 <div class="marquee">
     <div class="track">
         <!-- ORIGINAL -->
-        {% for item in site.psych %}
-            <span>{{ item.title }}</span>
+        {% for item in site.data.marquee %}
+            <span>{{ item }}</span>
         {% endfor %}
 
         <!-- DUPLICATE -->
+        {% for item in site.data.marquee %}
+            <span>{{ item }}</span>
+        {% endfor %}
     </div>
 </div>
