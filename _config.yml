@@ -23,3 +23,9 @@ collections:
     output: true
   misc:
     output: true
+
+defaults:
+  - scope:
+      path: "" # Replace with the actual path to your folder
+    values:
+      layout: "page"      # Example: set a default layout
