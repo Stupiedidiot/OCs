@@ -1,0 +1,22 @@
+{%- if include.collection -%}
+    {% assign collection = include.collection %}
+{% else %}
+    {% assign collection = page.collection %}
+{%- endif -%}
+
+{% assign collectionItems = site.[collection] | where: 'category', include.category %}
+
+{%- if include.tags -%}
+    {% assign collectionItems = collectionItems | where: 'tags', include.tags %}
+{%- endif -%}
+
+<div class="card">
+    {% for item in collectionItems %}
+    <a href="{{item.url}}" class="card-item">
+        {%- if item.thumb -%}
+            <img src="/{{collection}}/{{include.category}}/img/{{item.thumb}}" alt="character thumbnail">
+        {%- endif -%}
+        <span>{{item.title}}</span>
+    </a>
+    {% endfor %}
+</div>
